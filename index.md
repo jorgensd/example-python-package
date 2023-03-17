@@ -8,3 +8,6 @@ To set up a repository with features from this webpage, see: [Scientific Computi
 ## Contents
 ```{tableofcontents}
 ```
+
+## Coverage report
+[Coverage report](https://www.jsdokken.com/example-python-package/code-coverage-report/index.html)
