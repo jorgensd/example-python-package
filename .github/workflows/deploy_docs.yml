@@ -52,7 +52,7 @@ jobs:
     
       - name: Unzip artifact
         run: |
-          unzip documentation.zip
+          unzip documentation.zip -d documentation
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
