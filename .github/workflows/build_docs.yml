@@ -52,7 +52,9 @@ jobs:
             fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/code-coverage-report.zip`, Buffer.from(download.data));
 
       - name: Unzip artifact
-        run: unzip code-coverage-report.zip ${{ env.PUBLISH}}/code-coverage-report
+        run: |
+          unzip code-coverage-report.zip
+          mv code-coverage-report ${{ env.PUBLISH_DIR }}/code-coverage-report
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
