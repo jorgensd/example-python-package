@@ -2,7 +2,7 @@ name: Github Pages
 
 on:
   workflow_run:
-    workflows: [Test package]
+    workflows: [Build docs]
     branches: [main]
     types:
       - completed
