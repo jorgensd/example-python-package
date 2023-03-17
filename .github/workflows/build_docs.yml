@@ -55,9 +55,10 @@ jobs:
         run: |
           unzip code-coverage-report.zip -d ${{ env.PUBLISH_DIR }}/code-coverage-report
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ${{ env.PUBLISH_DIR }}
 
-  
+      - name: Upload documentation as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: documentation
+          path: ${{ env.PUBLISH_DIR }}
+          if-no-files-found: error
