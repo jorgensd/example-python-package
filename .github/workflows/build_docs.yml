@@ -53,8 +53,7 @@ jobs:
 
       - name: Unzip artifact
         run: |
-          unzip code-coverage-report.zip
-          mv code-coverage-report ${{ env.PUBLISH_DIR }}/code-coverage-report
+          unzip code-coverage-report.zip ${{ env.PUBLISH_DIR }}/code-coverage-report
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
