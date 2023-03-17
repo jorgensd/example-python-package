@@ -52,7 +52,7 @@ jobs:
     
       - name: Unzip artifact
         run: |
-          unzip documentation.zip -d ${{ env.PUBLISH_DIR }}/code-coverage-report
+          unzip documentation.zip
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
