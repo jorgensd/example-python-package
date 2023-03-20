@@ -66,6 +66,6 @@ jobs:
         if: matrix.os == 'ubuntu-22.04' && matrix.python-version == '3.11'
         uses: actions/upload-artifact@v3
         with:
-          name: coverage-report
+          name: code-coverage-report
           path: htmlcov
           if-no-files-found: error
