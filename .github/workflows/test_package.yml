@@ -49,8 +49,8 @@ jobs:
 
     steps:
       container: ubuntu:22.04
-      # - name: Install dependencies
-      #   uses: ./.github/actions/install-dependencies
+      - name: Install dependencies
+        uses: ./.github/actions/install-dependencies
 
       # - name: Set up Python ${{ matrix.python-version }}
       #   uses: actions/setup-python@v4
