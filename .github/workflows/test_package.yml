@@ -51,8 +51,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # - name: Install dependencies
-      #   uses: ./.github/actions/install-dependencies
+      - name: Install dependencies
+        uses: ./.github/actions/install-dependencies
 
       # - name: Set up Python ${{ matrix.python-version }}
       #   uses: actions/setup-python@v4
