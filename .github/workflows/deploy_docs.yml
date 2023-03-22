@@ -43,7 +43,7 @@ jobs:
           name: documentation
           path: "./public"
 
-      - name: Download docs artifact
+      - name: Download code-coverage artifact
         # docs artifact is uploaded by build-docs job
         uses: actions/download-artifact@v3
         with:
