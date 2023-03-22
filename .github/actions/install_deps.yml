@@ -1,0 +1,10 @@
+name: Install dependencies
+runs:
+  using: composite
+  steps:
+    - name: Install pip and python
+      shell: bash -el {0}
+      run: |
+        apt-get update
+        apt-get install -y python3-pip
+        
